@@ -8,17 +8,21 @@
 ### 이예원
 - `Nav`: 공통으로 쓰이는 Nav 컴포넌트
     - 스크롤 시 Nav 바가 가려지는 시점부터 고정 기능
-    - 전체 카테고리에 마우스 오버 시 서버로부터 받아온 카테고리 리스트 드롭다운
-    - 전체 카테고리가 선택 되었을 시에만 서브 카테고리 조건부 렌더링
+    - hover-and-expand 카테고리 기능
+    - hover-and-expand 서브 카테고리 기능
+    - onMouseEnter, onMouseLeave, map method, 조건부 렌더링 활용
 - `Main`: 웹 앱의 첫 메인 페이지
     - 자동으로 슬라이드 되는 캐러셀, 캐러셀 필터링 기능
     - 24시간 한정 세일을 위한 타이머 기능
-    - 총 6개 추천 품목 (suggestions, sales, new 등) 으로 나누어진 상품들을 각 캐러셀로 구현  
+    - 메인 페이지와 상품 리스트 페이지에서 공통 사용되는 상품 카드 컴포넌트 활용
+    - 총 6개 추천 품목 (suggestions, sales, new 등) 으로 나누어진 상품들을 각 캐러셀로 구현
+    - 이벤트 핸들러, transform CSS property, setInterval, clearInterval, getTime 함수, state, props 활용
 - `Product List`: 선택된 카테고리의 상품 리스트 페이지
     - 동적 라우팅으로 각 서브 카테고리의 상품 리스트 구현
     - 동적 라우팅으로 신상품순, 가격순 필터링 구현
-    - Pagination 구현
-    - 장바구니 모달창 기능 구현
+    - 상품 리스트 Pagination 구현
+    - 장바구니 모달창 기능, 장바구니 아이콘 업데이트 구현
+    - 이벤트 핸들러, fetch, template literal, state, props 활용
 ### 서동이
 - `Footer`: 맨 아래 고정. 해당 페이지로 이동 링크.
 - `Product Details`: 
